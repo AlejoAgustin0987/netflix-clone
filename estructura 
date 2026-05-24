@@ -1,0 +1,9 @@
+## 🗂 Estructura del proyecto
+
+```
+netflix-clone/
+├── index.html    # Estructura HTML completa
+├── styles.css    # Estilos (variables CSS, animaciones, responsive)
+├── app.js        # Lógica: FAQ, validación, efectos de scroll
+└── README.md
+```
