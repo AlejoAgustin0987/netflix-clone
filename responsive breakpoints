@@ -1,0 +1,7 @@
+
+
+| Breakpoint | Layout |
+|---|---|
+| `> 768px` | Desktop — dos columnas por sección |
+| `≤ 768px` | Tablet/Mobile — una columna, stacked |
+| `≤ 480px` | Mobile pequeño — selector de idioma oculto |
