@@ -52,11 +52,3 @@ npx serve .
 | JavaScript ES6+ | FAQ, validación, scroll effects |
 | Google Fonts | Tipografía |
 | Intersection Observer API | Scroll reveal |
-
-
-
-
-
-## 📄 Licencia
-
-MIT — libre para uso personal y educativo.
