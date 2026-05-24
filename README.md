@@ -17,15 +17,7 @@ Un clon pixel-perfect de la página principal de Netflix construido con **HTML5,
 - ✅ 100% responsivo (mobile, tablet, desktop)
 - ✅ Sin dependencias externas
 
-## 🗂 Estructura del proyecto
 
-```
-netflix-clone/
-├── index.html    # Estructura HTML completa
-├── styles.css    # Estilos (variables CSS, animaciones, responsive)
-├── app.js        # Lógica: FAQ, validación, efectos de scroll
-└── README.md
-```
 
 ## Cómo ejecutar
 
