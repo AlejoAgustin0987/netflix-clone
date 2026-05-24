@@ -53,17 +53,9 @@ npx serve .
 | Google Fonts | Tipografía |
 | Intersection Observer API | Scroll reveal |
 
-## 📱 Responsive Breakpoints
 
-| Breakpoint | Layout |
-|---|---|
-| `> 768px` | Desktop — dos columnas por sección |
-| `≤ 768px` | Tablet/Mobile — una columna, stacked |
-| `≤ 480px` | Mobile pequeño — selector de idioma oculto |
 
-## ⚠️ Disclaimer
 
-Este proyecto es únicamente con **fines educativos y de aprendizaje**. Netflix y todos sus logotipos, imágenes y marcas son propiedad de **Netflix, Inc.** Este clon no tiene afiliación con Netflix ni intenta suplantar el servicio original.
 
 ## 📄 Licencia
 
