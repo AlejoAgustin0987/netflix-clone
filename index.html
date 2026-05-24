@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix - Ver series y películas online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ───────────── HERO / LANDING ───────────── -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-logo">
+        <svg viewBox="0 0 111 30" class="logo-svg" aria-label="Netflix">
+          <path d="M105.06 0l-6.39 18.028L92.29 0H81.28l12.81 29.95L81.28 59.9h11.01l6.38-18.029L105.07 59.9h11.01L103.27 29.95 116.07 0h-11zM68.67 0v59.9h10.57V0H68.67zM40.88 0v59.9h10.57V32.453l12.51 27.447H74.8V0H64.24v27.388L51.7 0H40.88zM0 0v59.9h29.42V50.1H10.57V35.554h16.2V25.754h-16.2V9.8H29.42V0H0z" fill="#E50914"/>
+        </svg>
+      </div>
+      <div class="nav-actions">
+        <select class="lang-select">
+          <option>🌐 Español</option>
+          <option>English</option>
+        </select>
+        <a href="#" class="btn-signin">Iniciar sesión</a>
+      </div>
+    </nav>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <h1>Películas y series ilimitadas y mucho más</h1>
+      <p class="hero-sub">Disfruta donde quieras. Cancela cuando quieras.</p>
+      <p class="hero-cta-text">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o volver a activarla.</p>
+      <div class="email-form">
+        <div class="input-wrapper">
+          <input type="email" id="email" placeholder=" " autocomplete="email"/>
+          <label for="email">Email</label>
+        </div>
+        <button class="btn-start" onclick="handleCTA()">
+          Comenzar <span class="btn-arrow">›</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── DIVIDER ───────────── -->
+  <div class="section-divider"></div>
+
+  <!-- ───────────── FEATURE 1 ───────────── -->
+  <section class="feature">
+    <div class="feature-text">
+      <h2>Disfruta en tu TV</h2>
+      <p>Mira en Smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+    </div>
+    <div class="feature-media">
+      <div class="tv-wrapper">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV" class="tv-img"/>
+        <div class="tv-video-container">
+          <video autoplay loop muted playsinline class="tv-video">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"/>
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ───────────── FEATURE 2 ───────────── -->
+  <section class="feature feature-reverse">
+    <div class="feature-text">
+      <h2>Descarga series para verlas offline</h2>
+      <p>Guarda tu contenido favorito y siempre tendrás algo para ver.</p>
+    </div>
+    <div class="feature-media">
+      <div class="download-card-wrapper">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Mobile" class="mobile-img"/>
+        <div class="download-card">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="Stranger Things" class="boxshot"/>
+          <div class="download-info">
+            <span class="download-title">Stranger Things</span>
+            <span class="download-sub">Descargando...</span>
+          </div>
+          <div class="download-icon">
+            <div class="spinner-ring"></div>
+            <div class="spinner-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ───────────── FEATURE 3 ───────────── -->
+  <section class="feature">
+    <div class="feature-text">
+      <h2>Disfruta en cualquier lugar</h2>
+      <p>Mira todo el contenido que quieras en tu teléfono, tablet, laptop y TV sin pagar más.</p>
+    </div>
+    <div class="feature-media">
+      <div class="devices-wrapper">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="Devices" class="devices-img"/>
+        <div class="devices-video-container">
+          <video autoplay loop muted playsinline class="devices-video">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-es.m4v" type="video/mp4"/>
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ───────────── FEATURE 4 (Kids) ───────────── -->
+  <section class="feature feature-reverse">
+    <div class="feature-text">
+      <h2>Crea perfiles para niños</h2>
+      <p>Los niños tendrán aventuras propias con sus personajes y series favoritas en un espacio diseñado solo para ellos, sin costo adicional.</p>
+    </div>
+    <div class="feature-media">
+      <img src="https://occ-0-2433-2430.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmbbTwIMWThALuvMnpzSAU68jyaFKBsJJXnpRQarRCBX7tWb7sPuHzRMmEiQhHa_EYpYZRMPa9mgL1bJCZm2TA.png?r=54d" alt="Kids" class="kids-img"/>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ───────────── FAQ ───────────── -->
+  <section class="faq-section">
+    <h2>Preguntas frecuentes</h2>
+
+    <div class="faq-list" id="faqList"></div>
+
+    <div class="faq-cta">
+      <p>¿Listo para ver? Ingresa tu email para crear una cuenta o volver a activarla.</p>
+      <div class="email-form">
+        <div class="input-wrapper">
+          <input type="email" id="email2" placeholder=" " autocomplete="email"/>
+          <label for="email2">Email</label>
+        </div>
+        <button class="btn-start" onclick="handleCTA()">
+          Comenzar <span class="btn-arrow">›</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-contact">¿Preguntas? Llama al <a href="#">00-800-919-0819</a></p>
+      <div class="footer-links">
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Cuenta</a>
+        <a href="#">Medios</a>
+        <a href="#">Relaciones con los inversores</a>
+        <a href="#">Empleo</a>
+        <a href="#">Reproducción de contenido</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Preferencias de cookies</a>
+        <a href="#">Información corporativa</a>
+        <a href="#">Contáctanos</a>
+        <a href="#">Velocidad de prueba</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Solo en Netflix</a>
+        <a href="#">Cookies</a>
+      </div>
+      <select class="lang-select footer-lang">
+        <option>🌐 Español</option>
+        <option>English</option>
+      </select>
+      <p class="footer-copy">Netflix España</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
