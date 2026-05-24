@@ -43,12 +43,3 @@ npx serve .
 # Luego abre http://localhost:8080
 ```
 
-## 🛠 Tecnologías
-
-| Tecnología | Uso |
-|---|---|
-| HTML5 | Estructura semántica |
-| CSS3 | Variables, Grid, Flexbox, Animaciones |
-| JavaScript ES6+ | FAQ, validación, scroll effects |
-| Google Fonts | Tipografía |
-| Intersection Observer API | Scroll reveal |
